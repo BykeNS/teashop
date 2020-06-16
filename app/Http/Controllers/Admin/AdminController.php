@@ -26,6 +26,7 @@ class AdminController extends Controller
         $categories = Category::all();
         $products = Product::allProduct();
         return view('admin.pages.index', compact('products', 'users', 'categories'));
+        //git push -f origin master
     }
 
     public function create()
