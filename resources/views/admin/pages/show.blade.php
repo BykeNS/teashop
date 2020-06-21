@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -17,7 +17,7 @@
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 
 
@@ -32,7 +32,7 @@
               <h3 class="d-inline-block d-sm-none">{{ ucfirst($product->name) }}</h3>
 
           @foreach(explode(',' ,$product->image) as $image)
-         
+
                 @if ($loop->first)
                 <div class="col-12">
                     <img src="{{ asset('images/'.$image) }}" class="d-inline pb-3 mt-2 img-responsive" alt="Product Image" style="width: 480px; height: 400px; ">
