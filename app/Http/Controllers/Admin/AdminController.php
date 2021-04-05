@@ -113,7 +113,7 @@ class AdminController extends Controller
                 $productImage = public_path('images/' . $image);
                 if ($productImage) {
 
-                    unlink($productImage);
+                     File::delete($productImage);
 
                 }
             }
